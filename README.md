@@ -16,6 +16,19 @@ python xwlb.py schedule               # 每天 08:00 自动抓前一日，失败
 不要直接双击 index.html。部署时把 `site/` 整个上传到任意静态服务器即可；
 定时任务也可以用 crontab / Windows 计划任务直接调 `python xwlb.py fetch`。
 
+## 配置
+
+可选的 `config.json`（缺省时用默认值），各字段：
+
+| 字段 | 默认值 | 说明 |
+|---|---|---|
+| `output_dir` | `site` | 静态站点输出目录（相对脚本目录，可绝对路径） |
+| `schedule_time` | `08:00` | schedule 模式每天执行时间（也可用 `--time` 覆盖） |
+| `retries` | `8` | schedule 模式失败重试次数 |
+| `retry_wait_minutes` | `10` | schedule 模式重试间隔（分钟） |
+| `request_delay_seconds` | `0.6` | 相邻请求间隔秒数，请保持勿调小 |
+| `http_timeout_seconds` | `20` | 单次请求超时 |
+
 ## 数据来源
 
 均为央视网公开页面与接口：单日节目单 `tv.cctv.com/lm/xwlb/day/YYYYMMDD.shtml`
