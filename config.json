@@ -1,0 +1,8 @@
+{
+    "output_dir": "site",
+    "schedule_time": "08:00",
+    "retries": 8,
+    "retry_wait_minutes": 10,
+    "request_delay_seconds": 0.6,
+    "http_timeout_seconds": 20
+}

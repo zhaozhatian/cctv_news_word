@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>新闻联播 · 文字版</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1>新闻联播</h1>
+    <p class="sub">XINWEN LIANBO · 文字版电子档（T+1）</p>
+  </div>
+</header>
+
+<nav class="toolbar">
+  <div class="toolbar-inner">
+    <button id="prev" class="btn" type="button" title="前一天（←）">‹ 前一天</button>
+    <select id="dateSelect" title="选择日期"></select>
+    <button id="next" class="btn" type="button" title="后一天（→）">后一天 ›</button>
+    <button id="print" class="btn" type="button" title="打印或导出 PDF">打印 / PDF</button>
+    <span id="status" class="status" role="status"></span>
+  </div>
+</nav>
+
+<main class="page">
+  <section id="meta" class="issue-meta"></section>
+  <div id="player" class="player-mount"></div>
+  <details id="tocBox" class="toc" open>
+    <summary>本期目录</summary>
+    <ol id="toc"></ol>
+  </details>
+  <div id="articles"></div>
+</main>
+
+<footer class="foot">
+  <p id="updated"></p>
+  <p>内容整理自央视网《新闻联播》公开页面，版权归中央广播电视总台所有，仅供个人学习研究。</p>
+  <p>由 xwlb-t1 每日自动生成 · <a href="https://tv.cctv.com/lm/xwlb/" target="_blank" rel="noopener">官方栏目页</a></p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
